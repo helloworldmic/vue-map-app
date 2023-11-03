@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite App</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>  
+  <script type="module" src="/src/main.js"></script>
+  </head>
+  <body >
+    <h3>Please input the location </h3>
+    <div id="app">
+      <p> place: {{ title }}</p>
+      <p>{{ count }}</p>
+      <!-- <input v-model="locat ion" type="text"> -->
+      <!-- <p>{{message}}</p> -->
+      <p>{{location}}</p>
+
+     
+      <button @click="count++">
+      count is:  {{ count }}
+      </button>
+
+      <div @click="title='changed title'"> click me </div>
+      <button v-on:click="showOnMap()">
+        show on map
+      </button>
+    </div>
+    
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
+ 
